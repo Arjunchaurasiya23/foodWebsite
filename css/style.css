@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    height:90px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+}
+/* navigation bar logo and image */
+#logo{
+    align-items: center;
+    /* justify-content: center; */
+    color:white;
+    margin:1px 2px;
+}
+#logo img{
+    margin:2px 0px;
+    color:white;
+    height:113px;
+    /* height:2%; */
+}
+
+/* navigation bar:list styling */
+
+#navbar ul{
+    display: flex;
+    margin:2px 4px;
+    font-family: 'Imperial Script', cursive;
+    font-family: 'Mea Culpa', cursive;
+}
+#navbar ul li{
+    color:white;
+    list-style:none;
+    font-size:1.4rem;
+}
+#navbar ul li a{
+   display:block;
+   padding:3px 23px;
+   border-radius: 28px;
+   text-decoration: none;
+   color:white;
+   font-size:23px;
+   font-weight:bold;
+}
+#navbar ul li a:hover{
+  color:black;
+  background-color: rgb(108, 197, 233);
+ }
+
+ /* Home section */
+ #home{
+     display:flex;
+     flex-direction: column;
+     padding:54px 200px;
+     align-items: center;
+     justify-content: center;
+     height: 550px;
+ }
+ #home::before{
+    content:"";
+    background:url("../img/bg2.jpg")no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:.9;
+ }
+ #home h1{
+     color:white;
+     text-align: center;
+     font-size: 44px;
+     
+font-family: 'Mea Culpa', cursive;
+ }
+ #home p{
+     color:white;
+     text-align: center;
+     font-size: 1.2rem;
+     font-family: 'Imperial Script', cursive;
+     /* font-family: 'Imperial Script', cursive; */
+     font-family: 'Mea Culpa', cursive;
+ }
+
+
+ /* clinet-section */
+ #client-section{
+     /* display:flex; */
+     /* height:334px; */
+     position: relative;
+     z-index: -1;
+ }
+ #client-section::before{
+     content:"";
+     position:absolute;
+     background:url("../img/3.jpg")no-repeat center center/cover;
+     width:100%;
+     height: 100%;
+     z-index: -1;
+     opacity: .5;
+ }
+ #clients{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #clients img{
+    height:124px;  
+}
+ .client-item{
+padding:14px;
+ }
+
+ /* contact section */
+#contact{
+position: relative;
+z-index: -1;
+}
+#contact::before{
+   content:""; 
+   position: absolute;
+   width:100%;
+   z-index:-1;
+   height:100%;
+   opacity: .6;
+   background: url(../img/con1.jpg)no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    cursor: pointer;
+}
+#contact-box form{
+    cursor: pointer;
+    width:40%;
+    font-family: 'Mea Culpa', cursive;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Mea Culpa', cursive;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    padding:.5rem;
+    cursor: pointer;
+}
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+    text-align: center;
+}
+
+
+ /* service section */
+ #service{
+margin:50px 31px;
+display:flex;
+ }
+ #service .box{
+     border:2px solid red;
+     box-shadow: 7px 5px 12px gray;
+     margin:-39px 10px;
+     display:block;
+     padding:37px 13px;
+     border-radius: 23px;
+     margin-bottom: 15px;
+     background-color: rgb(241, 234, 234);    
+}
+#service .box img{
+    height:176px;
+    display:block;
+    margin:auto;
+    /* opacity:0.89; */
+}
+#services{
+     top:0;
+     height:100%;
+     box-shadow:23px black;
+}
+
+ /* utility class */
+ .h-primary{
+     font-size:3rem;
+     padding:12px;
+     text-align: center;
+     margin:0px ;
+     font-family: 'Imperial Script', cursive;
+ }
+ .h-secondry{
+font-size:1.9rem;
+padding:12px;
+text-align:center;
+font-family: 'Mea Culpa', cursive;
+ }
+ .btn{
+     padding:10px 32px;
+     border:2px solid white;
+     background-color: brown;
+     color:white;
+     margin:50px 34px;
+     
+     font-size:1.5rem;
+     border-radius: 20px;
+     cursor:pointer;
+ }
